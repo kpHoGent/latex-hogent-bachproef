@@ -1,0 +1,91 @@
+%---------- Inleiding ---------------------------------------------------------
+
+% TODO: Is dit voorstel gebaseerd op een paper van Research Methods die je
+% vorig jaar hebt ingediend? Heb je daarbij eventueel samengewerkt met een
+% andere student?
+% Zo ja, haal dan de tekst hieronder uit commentaar en pas aan.
+
+%\paragraph{Opmerking}
+
+% Dit voorstel is gebaseerd op het onderzoeksvoorstel dat werd geschreven in het
+% kader van het vak Research Methods dat ik (vorig/dit) academiejaar heb
+% uitgewerkt (met medesturent VOORNAAM NAAM als mede-auteur).
+% 
+
+\section{Inleiding}%
+\label{sec:inleiding}
+
+Met de toenemende aandacht voor fitness en krachttraining is er groeiende vraag naar effectieve, flexibele begeleiding op afstand. Personal trainers en fitnesscoaches zoeken naar manieren om hun cliënten te ondersteunen zonder dat fysieke aanwezigheid vereist is. Videobeelden vormen een unieke kans om de uitvoering van oefeningen nauwkeurig te vergelijken met referentiemateriaal, wat waardevolle feedback inzake de correcte technische uitvoering van deze oefeningen met zich mee brengt.
+
+Traditionele begeleiding beperkt zich vaak tot geschreven instructies of statische afbeeldingen, waardoor nauwkeurigheid in uitvoering ontbreekt en een directe feedbackloop ontbreekt. Dit kan leiden tot onnauwkeurige bewegingen en minder optimale resultaten. Een mobiele applicatie die bewegingspatronen kan analyseren en vergelijken met een referentievideo, zou een doorbraak kunnen betekenen voor zowel zelfstandige personal trainers, alsook fitnesscentra. Het doel van dit onderzoek is dan ook om een gebruiksvriendelijke, technisch haalbare applicatie te ontwikkelen die professionals en cliënten in staat stelt om nauwkeurig bewegingsfeedback te delen. Trainers kunnen een referentievideo van een oefening opnemen en versturen, waarna de cliënt zijn eigen uitvoering filmt. De applicatie vergelijkt de beelden op basis van belangrijke parameters, zoals gewrichtshoeken en bewegingssnelheid, en geeft feedback over de nauwkeurigheid van de uitvoering.
+
+De centrale onderzoeksvraag luidt als volgt:
+
+\begin{itemize}
+  \item Hoe kan een applicatie worden ontwikkeld die bewegingspatronen van cliënten effectief analyseert en vergelijkt met referentievideo’s om nauwkeurige feedback te geven op de uitvoering van krachtoefeningen?
+\end{itemize}
+
+Om deze hoofdvraag te kunnen beantwoorden dien de volgende deelvragen eerst aangepakt te worden:
+
+\begin{itemize}
+  \item Welke bestaande technologieën zijn het meest geschikt voor het herkennen en analyseren van menselijke bewegingspatronen in een mobiele applicatie?
+  \item Welke parameters zijn het meest relevant voor het nauwkeurig vergelijken van bewegingen tussen de referentievideo en de video van de cliënt?
+  \item Hoe kan een algoritme worden ontwikkeld dat verschillen in uitvoering detecteert en bruikbare feedback genereert?
+  \item Hoe kan de nauwkeurigheid van de deze videovergelijkingen worden getest en gevalideerd?
+\end{itemize}
+
+%---------- Stand van zaken ---------------------------------------------------
+
+\section{Literatuurstudie}%
+\label{sec:literatuurstudie}
+
+
+Een goede techniek bij het uitvoeren van kracht- en revalidatieoefeningen zorgt er niet alleen voor dat de juiste spieren en gewrichten worden geactiveerd. Het leidt tevens tot een verminderd risico op acute blessures, zoals verrekkingen of spierscheuren. Het is dus noodzakelijk dat men een goede techniek wordt aangeleerd aan de hand van voortdurende en directe feedback. Voor deze feedback kan er met beeldmateriaal gewerkt worden, wat dan weer de deur opent tot ondersteuning vanop afstand\autocite{MyerEtAl2009}.
+
+\emph{Human Pose Estimation} is een technologie die de positie en oriëntatie van een menselijk lichaam in een afbeelding of video analyseert en weergeeft. Het doel van \emph{human pose estimation} is om belangrijke punten van het lichaam, zoals de ogen, neus, schouders, ellebogen, polsen, heupen, knieën en enkel, te identificeren en in kaart te brengen, waardoor een digitaal skelet ontstaat dat de houding of beweging van de persoon in real-time kan volgen. Achterliggend maakt deze technologie gebruik van \emph{Deep Learning}, een onderdeel van \emph{machine learning} dat gebruikt maakt van kunstmatige neurale netwerken om complexe data te verwerken\autocite{JosyulaEtAl2021}.
+
+Tegenwoordig worden er al vaak Pose Estimation frameworks succesvol gebruikt voor de analyse van een menselijke houding. Zo haalde het gebruikte model van \textcite{ParasharEtAl2023} een accuraatheid van 99.50\% bij de herkenning van 5 verschillende yoga posities.
+
+
+% Voor literatuurverwijzingen zijn er twee belangrijke commando's:
+% \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
+%   geen onderdeel is van de zin.
+% \textcite{KEY} => Auteur (jaartal)  Gebruik dit als de auteursnaam wel een
+%   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
+%   ...'')
+
+
+%---------- Methodologie ------------------------------------------------------
+\section{Methodologie}%
+\label{sec:methodologie}
+\subsection{Vergelijkend onderzoek}
+\label{sec:vergelijkend onderzoek}
+
+Vooreerst zal een een literatuurstudie worden uitgevoerd om de verschillende, meest gebruikte, Pose Estimation frameworks in kaart te brengen. Deze worden vervolgens tegenover elkaar afgewogen op basis van gebruiksvriendelijkheid, precisie en snelheid. Mogelijks komen er uit de literatuurstudie nog parameters naar boven die ook in deze afweging kunnen opgenomen worden. Naast een uiteenzetting van de verschillende Pose Estimation frameworks, zal er ook onderzocht worden welke krachttrainingsoefeningen het meest prevalent zijn. Op basis hiervan wordt de data in de volgende fase gekozen. Deze fase zal een tweetal weken in beslag nemen.
+
+\subsection{Dataverzameling}
+\label{sec:dataverzameling}
+
+In de tweede fase wordt er beeldmateriaal van de geselecteerde oefeningen verzameld en gelabeld. Hiervoor zal voornamelijk gebruik gemaakt worden van online beschikbaar beeldmateriaal. Deze fase zal ongeveer vier weken in beslag nemen.
+
+\subsection{Ontwikkeling van het model}
+\label{sec:ontwikkeling van het model}
+
+Hierin wordt een \emph{Deep Learning} model ontwikkeld en getraind op basis van de aangelegde dataset. Bij afloop van deze fase beschikken we bijgevolg over een model dat in staat is de geselecteerde krachtoefeningen te herkennen. Deze fase zal ongeveer drie weken duren.
+
+\subsection{Testen van het model}
+\label{sec:testen van het model}
+Het model wordt getest met een deel van de eerder verzamelde data, die niet gebruikt werd tijdens het trainen van het model. Deze fase zal ongeveer een week duren.
+
+\subsection{Ontwikkeling van de mobiele applicatie}
+\label{sec:ontwikkeling van de mobiele applicatie}
+Er wordt een mobiele applicatie ontwikkeld waarbij de client persoonlijk videomateriaal kan toetsen aan het getraind model en zodoende feedback verkrijgt over de houding tijdens de uitvoering van de krachtrainingsoefening. Dit zal een drietal weken in beslag nemen.
+
+%---------- Verwachte resultaten ----------------------------------------------
+\section{Verwacht resultaat, conclusie}%
+\label{sec:verwachte_resultaten}
+
+De ontwikkelde applicatie zal gebruikers in staat stellen om videobeelden van krachtoefeningen eenvoudig en effectief te vergelijken met referentiemateriaal. Door gebruik te maken van geavanceerde pose estimation en een specifiek ontwikkeld algoritme voor bewegingsanalyse, biedt de applicatie gedetailleerde en nauwkeurige feedback over de technische uitvoering van oefeningen. Deze feedback is gericht op het verbeteren van bewegingspatronen, het minimaliseren van blessures en het optimaliseren van trainingsresultaten.
+
+Het onderzoek zal naar verwachting aantonen welke pose estimation framework het meest geschikt is voor het ontwikkelen van een toegankelijke en gebruiksvriendelijke mobiele applicatie. Bovendien zullen de bevindingen inzicht geven in de relevante parameters voor bewegingsvergelijking en hoe deze effectief kunnen worden toegepast om real-time feedback te genereren. De resultaten dragen niet alleen bij aan de fitness- en trainingssector, maar bieden ook een solide basis voor bredere toepassingen, zoals revalidatie en preventieve zorg, waarin bewegingsanalyse een cruciale rol speelt.
+
