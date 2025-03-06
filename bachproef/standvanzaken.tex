@@ -7,6 +7,70 @@
 
 % Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
 
+\section{\IfLanguageName{dutch}{Artificiële Intelligentie}{Artificial Intelligence}}%
+\label{sec:artificiële-intelligentie}
+
+Artificiële Intelligentie (AI) is een dynamisch en snel evoluerend vakgebied dat zich richt op het ontwikkelen van systemen die taken kunnen uitvoeren die normaal gesproken menselijke intelligentie vereisen, zoals leren, probleemoplossing en besluitvorming\autocite{SharifaniEtAl2023}.
+
+Het doel is om machines te ontwikkelen die autonoom kunnen functioneren in complexe en dynamische omgevingen\autocite{Kouassi2023}.
+
+AI als vakgebied is al meer dan 65 jaar in ontwikkeling en heeft zich inmiddels diep genesteld in ons dagelijks leven. Het speelt immers een curicale rol in sectoren zoals gezondheidszorg, transport, onderwijs en industrie, en wordt gezien als een belangrijke drijfveer voor sociaaleconomische veranderingen en technologische vooruitgang\autocite{JiangEtAl2022}.
+
+Binnen AI zijn Machine Learning (ML) en Deep Learning (DL) twee van de meest revolutionaire technologieën, die de afgelopen jaren aanzienlijke vooruitgang hebben geboekt\autocite{SharifaniEtAl2023}.
+
+\section{\IfLanguageName{dutch}{Machine Learning}}%
+\label{sec:machine-learning}
+
+ML is momenteel de meest dominante vorm van AI. Het is een methode voor data-analyse die het mogelijk maakt om analytische modellen automatisch te bouwen en te verbeteren. Het stelt computers in staat om te leren van ervaring, zonder expliciet te worden geprogrammeerd\autocite{SharifanEtAl2023}.
+
+ML omvat de volgende technieken, die gecombineerd kunnen worden om nog krachtigere en veelzijdigere AI-systemen te ontwikkelen\autocite{Kouassi2023}. 
+
+\begin{itemize}
+  \item Supervised Learning (SL): Hierbij wordt een model getraind met behulp van gelabelde gegevens, waarbij zowel de invoer als de gewensteuitvoer bekend zijn. Het model leert in feite door voorbeelden, vergelijkbaar met een leerling die oefent met vragen en de bijbehorende antwoorden. Het doel is om patronen te herkennen die vervolgens kunnen worden gebruikt om voorspellingen te maken voor nieuwe, onbekende gegevens. Voorbeelden van toepassingen zijn het herkennen van spam en het classificeren van afbeeldingen.
+  \item Unsupervised Learning (UL): Deze techniek werkt met ongelabelde data, waarbij het model zelf patronen of structuren moet ontdekken. Dit gebeurt vaak door clustering, waarbij vergelijkbare data automatisch worden gegroepeerd. Een voorbeeld is het segmenteren van klanten op basis van koopgedrag. UL is vooral nuttig wanneer er geen duidelijke labels beschikbaar zijn. 
+  \item Reinforcement Learning (RL): RL draait om een model dat leert door interactie met een omgeving. Het model probeert een strategie (beleid) te ontwikkelen die maximale beloningen oplevert. Dit wordt vaak gebruikt in scenario's zoals robotica, gaming en autonome voertuigen, waarbij het model leert door trial-and-error. 
+\end{itemize}
+
+\section{\IfLanguageName{dutch}{Deep Learning}}%
+\label{sec:deep-learning}
+
+Dit is een geavanceerde vorm van ML die gebruikmaakt van gelaagde neurale netwerken, geïnspireerd op de structuur van het menselijk brein. Het model verwerkt data iteratief, waarbij het parameters aanpast op basis van feedback.  Het is vooral geschikt voor taken met grote hoeveelheden ongestructureerde data, zoals beeld- en spraakherkenning. In tegenstelling tot traditionele ML modellen kan DL automatisch hoogwaardige kenmerken uit data halen, waardoor het beter presteert bij ingewikkelde taken\autocite{SharifaniEtAl2023}.
+
+Er zijn verschillende DL-architecturen, zoals Convolutionele Neurale Netwerken (CNN's) voor beeldverwerking en Recurrente Neurale Netwerken (RNN's) voor tijdreeksdata. DL kan zowel end-to-end systemen vormen als kenmerken extraheren voor andere ML-modellen\autocite{JanieschEtAl2021}. 
+
+Kortom, Deep Learning is een krachtige en veelzijdige technologie die een centrale rol speelt in de moderne AI-revolutie. Het is bijzonder effectief in het verwerken van grote en complexe datasets en heeft toepassingen in tal van domeinen. Echter, de ontwikkeling van DL-modellen brengt ook uitdagingen met zich mee, zoals het optimaliseren van modellen en het integreren van logisch redeneren. DL blijft een belangrijk onderzoeksgebied met een groot potentieel voor toekomstige innovaties\autocite{JiangEtAl2022}.
+
+\section{\IfLanguageName{dutch}{Computer Vision}}%
+\label{sec:computer-vision}
+
+Computer Vision (CV) is een snelgroeiend vakgebied binnen de beeldverwerking, waarbij CNN's, een belangrijk onderdeel van DL, een centrale rol spelen.  
+
+In de beginfase van CV werden DL-methoden beperkt door technische uitdagingen, zoals beperkt geheugen en rekenkracht. Hierdoor lag de focus aanvankelijk op traditionele ML-technieken. Met de verbetering van hardware (CPU/GPU) en de ontwikkeling van krachtige DL-modellen werd DL echter de dominante benadering in CV\autocite{ChaiEtAl2021}.
+
+CNN's hebben een revolutie teweeggebracht in taken zoals beeldclassificatie, objectdetectie en beeldreconstructie. Ze leren automatisch kenmerken uit ruwe data, waardoor ze complexe patronen kunnen herkennen en hogere niveau-representaties kunnen vormen. Dit maakt ze ideaal voor praktische toepassingen. 
+
+CV wordt breed ingezet in domeinen zoals autonoom rijden (object- en verkeersherkenning), virtual reality (immersieve ervaringen), en intelligente videobewaking (detectie van verdachte activiteiten). Ook wordt het gebruikt voor Human Activity Recognition (HAR), zoals het monitoren van ouderen of revalidatie, en voor taken zoals spraakherkenning en sentimentanalyse. 
+
+Een belangrijke uitdaging is dat CNN's veel rekenkracht en grote hoeveelheden gelabelde data vereisen, wat kostbaar en tijdrovend kan zijn. Toch blijft het veld zich snel ontwikkelen, met toekomstige richtingen zoals ensemble learning (combinatie van meerdere CNN's), aandachtsmechanismen (gericht op belangrijke informatie in beelden)\autocite{ZhaoEtAl2024}. 
+
+\section{\IfLanguageName{dutch}{Pose Estimation}}%
+\label{sec:pose-estimation}
+ 
+Pose Estimation is een CV-techniek die menselijke poses schat door lichaamsdelen en gewrichtsposities te detecteren in afbeeldingen of video's. Het wordt gebruikt in toepassingen zoals games, animatie, medische analyse, AI-gestuurde persoonlijke trainers, human-computer interactie, bewegingsanalyse, augmented reality, virtual reality, posetracking, actieherkenning en surveillance systemen\autocite{SiddharthEtAl2021}.
+
+Er zijn twee hoofdbenaderingen: single-person (één persoon per frame) en multi-person (meerdere personen, inclusief occlusies). Methoden variëren van top-down (eerst personen detecteren, dan lichaamsdelen) tot bottom-up (eerst lichaamsdelen detecteren, dan toewijzen aan personen). Pose estimation kan in 2D (gewrichtslocaties in 2D) of 3D (ruimtelijke opstelling van gewrichten) worden uitgevoerd. 3D HPE is toepasbaar in virtual reality en sportanalyse en kan single-view (één camerabeeld) of multi-view (meerdere camerabeelden om occlusies te overwinnen) zijn\autocite{ZhenEtAl2023}.
+
+Convolutional Neural Networks (CNN's) spelen een centrale rol, waarbij ze worden getraind om lichaamsdelen te classificeren en ruimtelijke modellen te combineren voor nauwkeurige resultaten. Andere geavanceerde technieken zijn Transformers (voor langeafstandsafhankelijkheden), Graph Convolutional Networks (voor correlaties tussen gewrichten) en Adversarial Learning (om robuustheid en nauwkeurigheid te verbeteren). Moderne methoden zoals DeepPose (gebruikt Deep Neural Networks), Adversarial PoseNet (combineert generatoren en discriminatoren voor nauwkeurige heatmaps) en OpenPose (real-time multi-person schatting met Part Affinity Fields) hebben het veld aanzienlijk vooruit geholpen\autocite{ZhaoEtAl2024}.
+
+Een van de grootste uitdagingen bij HPE is het verlies van low-level kenmerken, beperkte receptive fields, en problemen veroorzaakt door occlusies of verstrengelde lichaamsdelen. Om deze problemen aan te pakken, worden attention mechanisms zoals Context Coordinate Attention Module (CCAM), channel attention en spatial attention gebruikt om de aandacht te richten op belangrijke lichaamsdelen voor nauwkeurigere resultaten. Populaire modellen zoals YOLOv8x-pose combineren snelheid en precisie, waardoor ze geschikt zijn voor real-time toepassingen.
+
+Voor training en evaluatie worden datasets zoals MS COCO 2017 (meer dan 20.000 afbeeldingen met 17 geannoteerde gewrichten) en CrowdPose (gericht op real-world crowd-scènes) gebruikt. Evaluatiemetrics omvatten Average Precision (AP), gebaseerd op Object Keypoint Similarity (OKS), Average Recall (AR) voor het meten van keypoint-herkenning, en Latency (ms) om de inference-tijd van het model te beoordelen\autocite{DongEtAl2024}.
+
+Een voorbeeld van een geavanceerd model is CCAM-Person, gebaseerd op het YOLOv8-framework, dat YOLOv8 combineert voor doelherkenning met een binary classification-achtige benadering om keypoints te detecteren. Het model introduceert de Multi-scale Receptive Field (MRF) Module en het Multi-path Feature Pyramid Network (MFPN) om de interactie tussen verschillende feature-niveaus te optimaliseren, evenals het Context Coordinate Attention Module (CCAM) om de precisie te verhogen, vooral in gevallen van omgevingsgeluid of occlusies. Experimentele resultaten tonen aan dat CCAM-Person concurrerende prestaties behaalt, met een verbetering van 2.8\% in average precision en 4.2\% in recall rate op de MS COCO 2017-dataset, en een stijging van 3.5\% in AP op de CrowdPose-dataset. Ondanks een lichte afname in inference-snelheid door de aandachtmodules en multi-path fusie, blijft het model voldoen aan real-time eisen\autocite{DongEtAl2024}.
+
+Kortom, Human Pose Estimation (HPE) is een veelzijdige techniek met brede toepassingen, ondersteund door geavanceerde modellen en aandacht voor uitdagingen zoals occlusies en schaalvariaties. Door de inzet van deep learning-technieken en innovatieve benaderingen blijft het veld zich snel ontwikkelen, met als doel real-time, nauwkeurige en robuuste pose-schatting mogelijk te make\autocite{DongEtAl2024}.
+ 
+
 Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
 
 Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz.\ naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\LaTeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin (narratieve referentie), gebruik je \texttt{$\backslash${}textcite\{\}}. Soms is de auteursnaam niet expliciet een onderdeel van de zin, dan gebruik je \texttt{$\backslash${}autocite\{\}} (referentie tussen haakjes). Dit gebruik je bv.~bij een citaat, of om in het bijschrift van een overgenomen afbeelding, broncode, tabel, enz. te verwijzen naar de bron. In de volgende paragraaf een voorbeeld van elk.
@@ -14,38 +78,4 @@ Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz.\ na
 \textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
 
 Let er ook op: het \texttt{cite}-commando voor de punt, dus binnen de zin. Je verwijst meteen naar een bron in de eerste zin die erop gebaseerd is, dus niet pas op het einde van een paragraaf.
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.8\textwidth]{grail.jpg}
-  \caption[Voorbeeld figuur.]{\label{fig:grail}Voorbeeld van invoegen van een figuur. Zorg altijd voor een uitgebreid bijschrift dat de figuur volledig beschrijft zonder in de tekst te moeten gaan zoeken. Vergeet ook je bronvermelding niet!}
-\end{figure}
-
-\begin{listing}
-  \begin{minted}{python}
-    import pandas as pd
-    import seaborn as sns
-
-    penguins = sns.load_dataset('penguins')
-    sns.relplot(data=penguins, x="flipper_length_mm", y="bill_length_mm", hue="species")
-  \end{minted}
-  \caption[Voorbeeld codefragment]{Voorbeeld van het invoegen van een codefragment.}
-\end{listing}
-
-\lipsum[7-20]
-
-\begin{table}
-  \centering
-  \begin{tabular}{lcr}
-    \toprule
-    \textbf{Kolom 1} & \textbf{Kolom 2} & \textbf{Kolom 3} \\
-    $\alpha$         & $\beta$          & $\gamma$         \\
-    \midrule
-    A                & 10.230           & a                \\
-    B                & 45.678           & b                \\
-    C                & 99.987           & c                \\
-    \bottomrule
-  \end{tabular}
-  \caption[Voorbeeld tabel]{\label{tab:example}Voorbeeld van een tabel.}
-\end{table}
 
